@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 WORKDIR /root
 RUN git clone https://github.com/PX4/PX4-Autopilot 
 WORKDIR /root/PX4-Autopilot
-RUN DONT_RUN=1 make px4_sitl gazebo
+RUN DONT_RUN=1 make px4_sitl gazebo_standard_vtol__baylands
 
 #COPY entry.sh /
 #ENTRYPOINT "/entry.sh"
